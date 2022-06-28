@@ -1,0 +1,26 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/mainNavbar.ejs') %>
+
+<body>
+
+    <div class="  text-light text-center w-50 " id="title" >
+        <h1>Artigos publicados</h1>
+    </div>
+    
+    <div  class="container">
+
+        <% articles.forEach(article => { %>
+            <div  class="card bg-dark text-light ">
+                <div  class="card-header">
+                    <h3> <%= article.title %> </h3>
+                    <p> Criado em : <%= article.createdAt %> </p>
+                </div>
+                <div class="card-body" >
+                    <a href="/<%= article.slug %>" class="btn btn-danger" >Ler Artigo</a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+
+<%- include ('partials/footer.ejs') %>

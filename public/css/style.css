@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(78, 79, 83);}
+
+.card{
+    margin-top: 40PX;
+}
+#title{
+    
+    margin:40px auto auto auto;
+}
+#artigos{
+    margin-left: 20px;
+    font-size: 15px;
+}
+#categorias{
+    font-size: 15px;
+}
+#bthome{
+    margin: 20px;
+}
+
+
